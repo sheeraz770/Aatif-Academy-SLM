@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aatif Academy - Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Landing Page -->
+    <div class="landing-page">
+        <h1 class="school-title">Welcome to Aatif Academy</h1>
+        <p>Book appointments with your preferred teachers based on their specialties.</p>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search Teacher by Subject">
+            <button onclick="filterTeachers()">Search</button>
+        </div>
+
+        <a href="#teacher-list" class="btn-primary">View All Teachers</a>
+    </div>
+
+    <!-- Teacher List -->
+    <div id="teacher-list" class="teacher-list-container">
+        <h2>Available Teachers</h2>
+
+        <input type="text" id="subject-filter" onkeyup="filterTeachers()" placeholder="Filter by subject">
+
+        <div id="teacher-cards">
+            <!-- Teachers will be listed here via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+
+    <script src="script.js"></script>
+    <script src="LandingPage.js"></script>
+    <script src="TeacherList.js"></script> 
+    <script src="InteractiveCursor.js"></script>
+    <script src="LandingPage.css"></script>
+    
+</body>
+</html>
